@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/server/db/MySQL.hpp
+string
+-
+mysql/mysql.h
+-
+mymuduo/Logger.h
+-
+
+../include/server/model/FriendModel.hpp
+vector
+-
+User.hpp
+../include/server/model/User.hpp
+
+../include/server/model/User.hpp
+string
+-
+
+/root/tcpServer/src/server/model/FriendModel.cpp
+FriendModel.hpp
+/root/tcpServer/src/server/model/FriendModel.hpp
+MySQL.hpp
+/root/tcpServer/src/server/model/MySQL.hpp
+
